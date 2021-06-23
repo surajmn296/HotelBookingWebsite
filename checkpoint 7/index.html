@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+        <style>
+            #full{
+                width : 100%;
+                height: 100%;
+                margin: 0px;
+                position:absolute;
+                top:50px;
+                
+                
+            }
+            body {
+                
+                width : 100%;
+                height: 100%;
+                margin: 0 auto;
+                background-color: #e0e0e0;
+                font-family: 'Ubuntu', sans-serif;
+                overflow: auto;
+                bottom:100px;
+                display:flex;
+            
+            }
+            .logo {
+                height:60px; 
+                width:60px;
+                vertical-align: middle;
+                margin: 1%;
+                margin-top:0;
+            }
+            .socialLogo {
+                height :20px;
+                width : 22px;
+            }
+            header {
+                background-color: rosybrown;
+                position: fixed;
+                top: 0;
+                left:0;
+                width: 100%;
+                height:10%;
+                display: flex;
+                justify-content: space-between;
+                
+            }
+            footer {
+                background-color: rosybrown;
+                width: 100%;
+                bottom: 0;
+                position: fixed;
+                height: auto;
+            	top:auto;
+                display: flex;
+                justify-content:space-between;
+                vertical-align: middle;
+                padding: 1%;
+             }
+
+
+
+            #backImage{
+                background-image:url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
+                height: 380px;
+                width: 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                -ms-background-position-x: center;
+                -ms-background-position-y: center;
+                background-position: center ;
+                overflow: hidden;
+            }
+            .login {
+                position: absolute;
+                top: 15px;
+                right: 5px;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                margin: 1%;
+                margin-right: 10px;
+            }
+
+            #boxStyle {
+                 margin: 15% 35%;
+                 border-radius: 12px;
+                 border:1px solid transparent;
+                 background-color: #f1f1f1;
+                 padding: 10px;
+                 font-size: 16px;
+                 width: 30%;
+            }
+            #boxStyle:focus {
+                outline:none;
+            }
+                            
+            
+            .textStyle {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+
+            .cityImageSty{
+                margin-left: 12%; 
+                margin-right: 12%;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                padding: 4%
+                
+                }
+
+                .container,
+                .container * {
+                    box-sizing: border-box;
+                }
+
+                .container {
+                    position: relative;
+                    display: inline-block;
+                    overflow: hidden;
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 25%;
+                    box-shadow:10px 10px 10px 0px grey;
+                }
+
+                .container img {
+                    max-width: 100%;
+                } 
+                .container .cityImage {
+                    display: block;
+                }   
+
+            .cityImage {
+                height:150px;
+                width: 150px;
+                border-radius: 25%;
+                box-shadow:10px 10px 10px 0px grey;
+                
+            }
+
+            .container .layertop {
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.6);
+                color: #fff;
+                padding: 15px;
+                -moz-transition: all 0.4s ease-in-out 0s;
+                -webkit-transition: all 0.4s ease-in-out 0s;
+                -ms-transition: all 0.4s ease-in-out 0s;
+                transition: all 0.4s ease-in-out 0s;
+            }
+
+    
+            
+            .container:hover .layertop,
+            .container.active .layertop {
+                opacity: 1;
+            }
+            .container .text {
+                text-align: center;
+                font-size: 18px;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -moz-transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+
+
+        </style>
+    </head>
+    
+        <div id = "full">
+            <header>
+                <img class = "logo" src = "C:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt = "logo">
+                <a class="login" href = "login.html">Login</a>               
+            </header>
+            <body>
+            <div>
+                <div id = "backImage" >
+                    <input id = "boxStyle" type = "text" placeholder = "City">
+                    
+                    </div>
+                
+                
+        <div class="cityImageSty">
+
+
+                <div class="container">
+                <a href = "list.html" ><img class = "cityImage" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg">
+                <div class = "layertop">
+                <div class="text">Delhi</div>
+                </div></a></div>
+                
+                <div class="container">
+                <img class = "cityImage" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt = "Goa">
+                <div class = "layertop">
+                <div class="text">Goa</div>
+                </div></div>
+                
+                <div class="container">
+                <img class = "cityImage" src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt = "Hyderabad">
+                <div class = "layertop">
+                <div class="text">Hyderabad</div>
+            </div></div>
+                
+            <div class="container">
+            <img class = "cityImage" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt = "Kolkata">
+            <div class = "layertop">   
+            <div class="text">Kolkata</div>
+                </div></div>
+    
+            
+            </div> 
+            
+            <div style = "padding-left: 45%; height:100px;" ><a href="" class= "textStyle">View More >></a></div>       
+                       
+            </div>
+        </body>
+            
+            <footer>
+                <span id="contactus"><a href = "contact.html" target="_blank" class= "textStyle">Contact Us</a></span>
+                <span style="font-size: small;">© 2020 ROOM SEARCH PVT. LTD</span>
+                <span style="margin-right: 30px;"><a href = "https://www.facebook.com" target="_blank"><img class ="socialLogo" src = "assests/images/facebook.png"  alt ="facebooklogo"></a>
+                <a href = "https://www.instagram.com" target="_blank"><img class ="socialLogo" src = "assests/images/instagram.png" alt ="instagramlogo"></a>
+                <a href = "https://www.twitter.com" target="_blank"><img class ="socialLogo" src = "assests/images/twitter.png" alt ="twitterlogo"></a>
+                </span>
+            </footer>
+
+        </div>
+    
+</html>

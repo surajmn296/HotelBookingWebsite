@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            
+        <style>
+
+.modal-header, h4, .close {
+    text-align: left;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: white;
+     text-align: left;
+  }
+  .modal-backdrop.show {
+    opacity: 0;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 0;
+    height: 0;
+    background-color: #000;
+}
+
+        body {
+                width : 100%;
+                height: 100%;
+                margin: 0px;
+                background-color: #e0e0e0;
+                font-family: 'Ubuntu', sans-serif;
+
+            }
+            #full{
+                margin-top: 80px;
+                margin-bottom: 300px;
+            }
+            .hotelImage {
+                height: 250px;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                float:left;
+                flex: 40%;
+                
+                
+            }
+            .info {
+                background-color: rgb(132,136,139);
+                max-width: 60%;
+                min-width: 25%;
+                max-height: 20%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 15%;
+                margin-bottom: 2%;
+                display: flex;
+                flex: 100%;
+                
+            }
+
+            .detailsColumn{
+                
+                width:100%;
+                margin: 5%;
+                
+                
+            
+            }
+            h3{
+                font-size: 250%;
+                font-weight: bolder;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
+            .logo {
+                height:60px; 
+                width:60px;
+            }
+            .socialLogo {
+                height :20px;
+                width : 22px;
+            }
+            header {
+                background-color: rosybrown;
+                position: fixed;
+                top: 0;
+                left:0;
+                width: 100%;
+                height:10%;
+                display: flex;
+                justify-content: space-between;
+                
+                
+                }
+
+            footer {
+                background-color: rosybrown;
+                width: 100%;
+                bottom: 0;
+                position: fixed;
+                height: auto;
+            	top:auto;
+                display: flex;
+                left:0;
+                justify-content:space-between;
+                vertical-align: middle;
+                padding:1%;
+                
+             }
+            .login {
+                position: absolute;
+                top: 15px;
+                right: 5px;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                margin-right: 10px;
+            }
+            #contactus{
+                position: relative;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                vertical-align: middle;
+            }
+            #linkSty{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            
+            .customer {
+                margin: 5%;
+            }
+            .tarrif {
+                margin: 2%;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 1% 2%;
+                background-color: rosybrown;
+                display: flex;
+                
+                justify-content: space-around;
+                text-align: left;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="full">
+            <header>
+                <img class = "logo" src = "C:\Hotel_Booking_Website_Starter_Code\assests\images\logo.png" alt = "logo">
+                <button type="button" class="btn btn-light login" data-toggle="modal" data-target="#exampleModal">
+                    Login</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+
+                            <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                  <label for="exampleInputEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Password</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                              </form>
+                              </div>
+
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" style="margin-left: auto;margin-right: auto;">Login</button>
+                            </div>
+
+
+                            </div>
+                          </div>
+                        </div>
+  
+            </header>
+
+            <div>
+                <div class="info"><img class = "hotelImage" src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                <div class="detailsColumn"><h3>Radisson Blu Hotel</h3>
+                <p>#38 of 1,289 hotels in New Delhi</p>
+                <p>National Highway 8, New Delhi 110017</p></div></div>
+                
+                <div class="tarrif">
+                <div>
+                <p><b>Name:</b> John Doe</p>
+                <p><b>Number of Adults:</b> 2</p>
+                <p><b>Check-in Date:</b> 06/06/2020</p>
+                <p><b>Check-out Date:</b> 08/06/2020</p>
+                </div>
+                
+                <div style="margin-top: 2%;"><p><b>Tariff Breakdown:</b> Rs. 1000 x 2 Adults x 5 Nights</p>
+                <p><b>Total Amount:</b> Rs. 10000</p></div>
+
+                <div  style="margin-top: 4%;"><a id="linkSty"><button type="button" class="btn btn-success">Pay Now</button></a></div>
+                </div>
+            
+                
+            </div>
+
+            <footer>
+                <!-- Button trigger modal -->
+<span><button type="button" class="btn btn-info" data-toggle="modal" data-target="#contactModal">
+    Contact Us
+  </button></span>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+            <p>Thank You for reaching out!!!</p>
+                <p>Please enter your email we will get back to you</p>
+
+                <form action = "index.html" m ethod="get">
+                    <input type="email"  required placeholder="Enter your email">
+
+
+                </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+                <span> © 2020 ROOM SEARCH PVT. LTD</span>
+                <span style="margin-right: 30px;"><a href = "https://www.facebook.com" target="_blank"><img class ="socialLogo" src = "assests/images/facebook.png"  alt ="facebooklogo"></a>
+                <a href = "https://www.instagram.com" target="_blank"><img class ="socialLogo" src = "assests/images/instagram.png" alt ="instagramlogo"></a>
+                <a href = "https://www.twitter.com" target="_blank"><img class ="socialLogo" src = "assests/images/twitter.png" alt ="twitterlogo"></a>
+                </span>
+            </footer>
+        </div>
+    </body>
+</html>
