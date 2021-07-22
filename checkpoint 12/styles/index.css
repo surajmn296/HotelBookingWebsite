@@ -1,0 +1,133 @@
+.modal-backdrop{
+background-color: #222;
+}
+#searchbar{
+	height: 380px;
+	background-image:url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+#input:focus{
+	outline: none;
+}
+#content{
+	display: flex;
+	flex-direction: column;
+}	
+.city_img{
+	border-radius: 25%;
+	width: 150px;
+	height: 150px;
+	opacity: 1;
+	display: flex;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+.cityImage img{
+	box-shadow: 10px 10px 10px grey;
+}	
+.image:hover img{
+	opacity: 0.5;
+}
+.cityName{
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	transform: translate(-50%, 50%);
+	color: black;
+	margin-top: -6em;
+	margin-left: 4.5em;
+}
+.image:hover .cityName{
+	opacity: 1;
+}
+.input{
+	width:30%; 
+	background-color: #f1f1f1;
+	border:1px solid transparent;
+	border-radius: 12px;
+	padding: 10px;
+	font-size: 16px;
+	margin-top: 13%;
+}
+.viewmore{
+	text-decoration: none;
+	color: black;
+	align-self: center;
+	margin-bottom: 8%;
+	margin-top: 5%;
+}
+@media only screen and (max-width: 576px){
+	body{
+		width: 100%;
+	}
+#searchbar{
+	width: 135%;
+}
+.input{
+	width:30%; 
+	background-color: #f1f1f1;
+	border:1px solid transparent;
+	border-radius: 12px;
+	font-size: 16px;
+	margin-top: 33%;
+}
+.cityImage{
+	display: flex;
+	flex-direction: column;
+	margin-top: 0%;
+	padding-left: 50%;
+}
+.image{
+	padding-bottom: 30px;
+}
+.viewmore{
+	margin-bottom: 25%;
+	margin-left: 40%;
+}
+}
+@media only screen and (min-width: 768px){
+	body{
+		width: 100%;
+	}
+#searchbar{
+	width: 135%;
+}
+.cityImage{
+	display: inline-block;
+}
+.image{
+	padding-top:6%;
+	padding-left: 28%;
+	display: inline-block;
+}
+.input{
+	margin-top: 20%;
+}
+.viewmore{
+	margin-left: 35%;
+}
+
+}
+@media only screen and (min-width: 992px){
+	#searchbar{
+	width: 100%;
+}	
+.cityImage{
+	display: inline-block;
+	padding-left: 7%;
+}
+.viewmore{
+	margin-bottom: 8%;
+	margin-left: 0%;
+}
+.input{
+	margin-top: 13%;
+}
+.image{
+	padding-left: 10%;
+}
+
+}
