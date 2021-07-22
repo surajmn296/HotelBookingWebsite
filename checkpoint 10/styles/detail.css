@@ -1,0 +1,140 @@
+.carousel-item img{
+	width: 500px; 
+	max-height: 350px; 
+	margin: 2% 4% 0%;
+}
+.description{
+	padding-bottom: 6%;
+}
+#bookingDetail{
+	display: flex;
+	height: 400px;
+	border:1px solid black;
+}
+#dookingDetail img{
+	flex-grow:0;
+    flex-shrink:0;
+}
+#content{
+margin: 6% 2%;
+}
+.carousel-item{
+    text-align: center; 
+}
+.text{
+	width: 40%;
+	padding-left: 20px;
+}
+.hotelimage{
+	width: 70%;
+	border-right: 1px solid black;
+}
+.input{
+	width: 60%;	
+}
+.formClass{
+	width: 30%; 
+	line-height: 100%;
+}
+.hotelDetails{
+	margin: 1% 4% 2%;
+}
+button{
+	padding: 6px;
+}
+._form{
+	display: flex;
+	margin-bottom: 40px;
+	margin-top: 12px;
+}
+.heading{
+	font-family: cursive;
+}
+#star{
+	color: orange;
+}
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23BC8F8F' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23BC8F8F' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+@media only screen and (max-width: 576px){
+	body{
+		width: 100%;
+	}
+#bookingDetail{
+	margin-top: 20%;
+	display: block;
+	height: 400px;
+	border:1px solid black;
+}
+._form{
+	width: 100%;
+	display: flex;
+}
+.formClass{
+	width: 100%;
+	border:1px solid black;
+}
+.hotelDetails{
+	padding-top: 115%;
+}
+.hotelImage{
+	width: 100%;
+	height: 100%;
+}
+.text{
+	width: 40%;
+	padding-left: 20px;
+}
+.image{
+	width: 300px;
+	height: 250px;
+}
+input{
+	width: 100%;
+}
+.input{
+	width: 60%;	
+	padding-right:20px;
+}
+#copyright{
+	font-size:12px;
+}
+.description{
+	margin-bottom: 12%;
+}
+}
+@media only screen and (min-width: 576px){
+	body{
+		width: 100%;
+	}
+	input{
+	width: 100%;
+}
+#bookingDetail{
+	margin-top: 10%;
+	display: flex;
+	height: 400px;
+	border:1px solid black;
+}
+.input{
+	width: 60%;	
+	padding-right:10px;
+}
+
+}
+@media only screen and (min-width: 992px){
+#bookingDetail{
+	margin-top: 5%;
+	display: flex;
+	height: 400px;
+	border:1px solid black;
+}
+
+.input{
+	width: 60%;	
+	padding-right:10px; 
+}
+}

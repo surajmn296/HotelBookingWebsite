@@ -1,0 +1,103 @@
+<html>
+<head>
+	<title>Index</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="styles/index.css" rel="stylesheet" >
+	<link href="styles/common.css" rel="stylesheet" >
+</head>
+<body>
+<div id="container">
+    <!-- Header -->
+	<header>
+		<img src="assests/images/logo.png" alt="logo"/>
+		<button type="button" id="loginbutton" class="btn btn-light btn-sm" data-toggle="modal" data-target="#login">LOGIN </button>	
+	</header>
+	<!-- Login Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Please Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" >
+                    <form>
+                        <div class="form-group">
+                            <label class="col-form-label" for="username">Username: </label>
+                            <input id="username" type="text" class="form-control" placeholder="Enter Usernme" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label" for="password" autocomplete="off">Password: </label>
+                            <input id="password" type="password" class="form-control" placeholder="Enter Password" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" style="margin: auto;">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div id="content">
+        <!-- Search for city -->
+		<div id="searchbar">
+			<input type="text" name="city" placeholder="City" class="input"><br>
+		</div>
+        <!-- Cities -->
+		<div class="cityImage" >
+			<div class="image"><a href="list.html"><img class="city_img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"><div class="cityName">Delhi</div></a></div>
+			<div class="image"><img class="city_img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"><div class="cityName">Goa</div></div>
+			<div class="image"><img class="city_img" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"><div class="cityName">Hyderabad</div></div>
+			<div class="image"><img class="city_img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"><div class="cityName">Kolkata</div></div><br>
+		</div>
+		<a href="index.html" class="btn btn-secondary viewmore" role="button" >Viemore </a>
+
+	</div>
+	<!-- Contact Us Modal -->
+	<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel1">Get in touch</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                	<p>Thank you for reaching out!!!</p>
+                	<p>Please enter your email and we will get back to you.</p>
+                		<form>
+                			<div class="form-group">
+	                            <label class="col-form-label">Email:</label>
+	                            <input type="text" class="form-control" placeholder="Enter your emailid"required>
+	                        </div>
+                        </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+	<footer style="display: flex">
+		<div id="contact">
+			<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contact">ContactUs</button>
+		</div>
+		<div id="copyright">&copy; 2020 ROOM SEARCH PVT. LTD</div>
+		<div class="social_media_icons">
+			<a href="https://www.facebook.com" target="_blank"><img class="social_img" src="assests/images/facebook.png"></a>
+			<a href="https://www.instagram.com" target="_blank" ><img class="social_img" src="assests/images/instagram.png"></a>
+			<a href="https://twitter.com" target="_blank" ><img class="social_img" src="assests/images/twitter.png" width="22px" height="20px"></a>
+		</div>	
+	</footer>
+	
+</div>
+</body>
+</html>
