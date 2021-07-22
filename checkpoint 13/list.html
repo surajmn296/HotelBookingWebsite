@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>List</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="styles/common.css" rel="stylesheet" >
+	<link href="styles/list.css" rel="stylesheet" >	
+</head>
+<body>
+<div id="container">
+	<!-- Header -->
+    <header  id="header1"> </header>
+    <!-- Login Modal -->
+    <div id="loginModalCreation"> </div>
+
+    
+	<div id="content">
+		<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+			  <li class="nav-item">
+			    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ListView</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">MapView</a>
+			  </li>
+		</ul>
+		<!-- Hotel Information -->
+		<div class="tab-content" id="pills-tabContent">
+			<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+			   <div id="hotel_list"></div>
+			</div>
+			<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+				<div id="map_view"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Contact Us Modal -->
+	<div id="contactUsModalCreation"></div>
+    <!-- Footer -->
+	<footer id="footer1" style="display: flex"></footer>
+</div>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/list.js"></script>
+</body>
+</html>

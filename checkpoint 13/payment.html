@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Payment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="styles/payment.css" rel="stylesheet" >
+	<link href="styles/common.css" rel="stylesheet" >
+</head>
+<body>
+<div id="container">
+	<!-- Header -->
+    <header  id="header1"> </header>
+    <!-- Login Modal -->
+    <div id="loginModalCreation"> </div>
+
+    
+	<div id="content">
+		<!-- Hotel Details -->
+		<div id="hotel">
+			<img class="hotel-image" id="hotel-image" alt="hotel-image">
+			<div class="address">
+				<h2 id="hotel-name"></h2>
+                    <p id="ranking"></p>
+                    <p id="address"></p>
+             </div>
+		</div>
+		<!-- Customer Details -->
+		<div id="details">
+			<div id="customer">
+				<p id="name"></p> 
+                <p id="adult"></p>
+                <p id="from-date"></p>
+                <p id="to-date"></p>
+            </div>
+			<div id="payment-details">
+                <p id="tariff"></p>
+                <p id="amount"></p>
+            </div>
+		
+		<div id="pay">
+		<a id="payNow" type="button" class="btn btn-success" style="color: white">PayNow</a></div></div>
+	</div>
+	<!-- Contact Us Modal -->
+    <div id="contactUsModalCreation"></div>
+    <!-- Footer -->
+    <footer id="footer1" style="display: flex"></footer>
+</div>
+<script type="text/javascript" src="scripts/common.js"></script>
+<script type="text/javascript" src="scripts/payment.js"></script>
+</body>
+</html>
